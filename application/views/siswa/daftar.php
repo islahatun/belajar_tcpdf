@@ -13,16 +13,19 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td class="text-center">
-                            <a href="" class="btn btn-primary">UBAH</a>
-                            <a href="" class="btn btn-danger">HAPUS</a>
-                        </td>
+                        <?php $i = 1; ?>
+                        <?php foreach ($siswa as $s) : ?>
+                            <th scope="row"><?= $i ?></th>
+                            <td><?= $s['nisn'] ?></td>
+                            <td><?= $s['nis'] ?></td>
+                            <td><?= $s['nama'] ?></td>
+                            <td class="text-center">
+                                <a href="" class="btn btn-primary">UBAH</a>
+                                <a href="" class="btn btn-danger">HAPUS</a>
+                            </td>
                     </tr>
-
+                    <?php $i++; ?>
+                <?php endforeach; ?>
                 </tbody>
             </table>
         </div>

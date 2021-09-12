@@ -7,9 +7,9 @@ class Siswa extends CI_Controller
 
     public function index()
     {
-        $this->db->get('siswa');
+        $data['siswa'] = $this->db->get('m_siswa')->result_array();
         $this->load->view('templete/header');
-        $this->load->view('siswa/daftar');
+        $this->load->view('siswa/daftar', $data);
         $this->load->view('templete/footer');
     }
     public function tambah()
