@@ -7,5 +7,8 @@ class Siswa extends CI_Controller
 
     public function index()
     {
+        $this->load->view('templete/header');
+        $this->load->view('siswa/daftar');
+        $this->load->view('templete/footer');
     }
 }
