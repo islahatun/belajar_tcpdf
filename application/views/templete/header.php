@@ -52,7 +52,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="<?= base_url('Siswa/tambah') ?>">
+                    <form action="<?= base_url('Siswa/tambah') ?>" method="post">
                         <div class="row g-3 align-items-center">
                             <div class="row">
                                 <div class="col">
@@ -60,7 +60,7 @@
                                         <label for="inputPassword6" class="col-form-label">NISN</label>
                                     </div>
                                     <div class="col-auto">
-                                        <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                        <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" name="nisn">
                                     </div>
                                 </div>
                                 <div class="col">
@@ -68,7 +68,7 @@
                                         <label for="inputPassword6" class="col-form-label">NIS</label>
                                     </div>
                                     <div class="col-auto">
-                                        <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                        <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" name="nis">
                                     </div>
                                 </div>
                                 <div class="col">
@@ -76,7 +76,7 @@
                                         <label for="inputPassword6" class="col-form-label">NAMA</label>
                                     </div>
                                     <div class="col-auto">
-                                        <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                        <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" name="nama">
                                     </div>
                                 </div>
                             </div>
