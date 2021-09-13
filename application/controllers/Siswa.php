@@ -22,4 +22,17 @@ class Siswa extends CI_Controller
         $this->db->insert('m_siswa', $data);
         redirect('Siswa');
     }
+    public function ubah($id)
+    {
+        $nis = $this->input->post('nis');
+        $nisn = $this->input->post('nisn');
+        $nama = $this->input->post('nama');
+
+        $this->db->set('nisn', $nisn);
+        $this->db->set('nis', $nis);
+        $this->db->set('nama', $nama);
+        $this->db->where('id', $id);
+        $this->db->update('m_siswa');
+        redirect('Siswa');
+    }
 }
