@@ -4,6 +4,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Siswa extends CI_Controller
 {
 
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->library('pdf_report');
+    }
 
     public function index()
     {
@@ -34,5 +39,9 @@ class Siswa extends CI_Controller
         $this->db->where('id', $id);
         $this->db->update('m_siswa');
         redirect('Siswa');
+    }
+    public function cetak()
+    {
+        $this->load->view('siswa/cetak');
     }
 }

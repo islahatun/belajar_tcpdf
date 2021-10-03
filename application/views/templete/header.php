@@ -26,7 +26,7 @@
                             <a class="nav-link active" aria-current="page" data-bs-toggle="modal" data-bs-target="#tambahsiswa">Tambah Siswa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cetak Laporan</a>
+                            <a class="nav-link" href="<?= base_url('Siswa/cetak') ?>">Cetak Laporan</a>
                         </li>
                     </ul>
                     <form class="d-flex">
